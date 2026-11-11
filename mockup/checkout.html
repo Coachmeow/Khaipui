@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Khaipui — จัดส่งและชำระเงิน</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#1E5631}a:hover{color:#143D22}
+button,select,textarea{font:inherit;cursor:pointer}
+input,textarea{font:inherit}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<div style="font-family: 'Noto Sans Thai', system-ui, sans-serif; color: #1A2419; background: #F7F9F6; font-size: 16px; line-height: 1.6">
+
+  <header style="background: #FFFFFF; border-bottom: 1px solid #D5DDD2">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+      <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1A2419">
+        <span style="width: 44px; height: 44px; border-radius: 12px; background: #1E5631; color: #F5B700; display: flex; align-items: center; justify-content: center">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10"></path><path d="M10 20c5.5-2.5.8-6.4 3-10"></path><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path></svg>
+        </span>
+        <span style="display: flex; flex-direction: column; line-height: 1.15">
+          <span style="font-weight: 700; font-size: 24px; letter-spacing: 0.04em; color: #1E5631">KHAIPUI</span>
+          <span style="font-size: 13px; color: #4F5B4C">ปุ๋ยและอุปกรณ์การเกษตร</span>
+        </span>
+      </a>
+      <span style="display: flex; align-items: center; gap: 8px; color: #1E5631; font-weight: 600">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>ชำระเงินอย่างปลอดภัย</span>
+      </span>
+    </div>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 72px">
+    <ol aria-label="ขั้นตอนการสั่งซื้อ" style="list-style: none; margin: 0 0 28px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-size: 15px">
+      <li style="display: flex; align-items: center; gap: 8px; font-weight: 600">
+        <span style="width: 32px; height: 32px; border-radius: 50%; background: #DCE8D6; color: #1E5631; display: flex; align-items: center; justify-content: center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+        </span>
+        <a href="cart.html" style="color: #1E5631">ตะกร้าสินค้า</a>
+      </li>
+      <li aria-hidden="true" style="width: 48px; height: 2px; background: #1E5631"></li>
+      <li aria-current="step" style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #1E5631">
+        <span style="width: 32px; height: 32px; border-radius: 50%; background: #1E5631; color: #FFFFFF; display: flex; align-items: center; justify-content: center">2</span>
+        <span>จัดส่งและชำระเงิน</span>
+      </li>
+      <li aria-hidden="true" style="width: 48px; height: 2px; background: #C6D6C0"></li>
+      <li style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: #4F5B4C">
+        <span style="width: 32px; height: 32px; box-sizing: border-box; border-radius: 50%; border: 2px solid #C6D6C0; display: flex; align-items: center; justify-content: center">3</span>
+        <span>ยืนยันคำสั่งซื้อ</span>
+      </li>
+    </ol>
+
+    <h1 style="margin: 0 0 24px; font-weight: 700; font-size: 34px; line-height: 1.3; color: #143D22">จัดส่งและชำระเงิน</h1>
+
+    <form style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+      <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+
+        <section style="background: #FFFFFF; border: 1px solid #D5DDD2; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+          <h2 style="margin: 0; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 21px; color: #143D22">
+            <span style="width: 30px; height: 30px; border-radius: 50%; background: #1E5631; color: #FFFFFF; font-size: 15px; display: flex; align-items: center; justify-content: center">1</span>
+            <span>ข้อมูลผู้รับ</span>
+          </h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="fullname" style="font-weight: 600; font-size: 15px">ชื่อ-นามสกุล</label>
+              <input id="fullname" type="text" placeholder="ชื่อและนามสกุลผู้รับ" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="tel" style="font-weight: 600; font-size: 15px">เบอร์โทรศัพท์</label>
+              <input id="tel" type="tel" placeholder="08X-XXX-XXXX" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+            </div>
+          </div>
+        </section>
+
+        <section style="background: #FFFFFF; border: 1px solid #D5DDD2; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+          <h2 style="margin: 0; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 21px; color: #143D22">
+            <span style="width: 30px; height: 30px; border-radius: 50%; background: #1E5631; color: #FFFFFF; font-size: 15px; display: flex; align-items: center; justify-content: center">2</span>
+            <span>ที่อยู่จัดส่ง</span>
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label for="addr" style="font-weight: 600; font-size: 15px">ที่อยู่</label>
+            <input id="addr" type="text" placeholder="บ้านเลขที่ หมู่ ซอย ถนน" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="subdistrict" style="font-weight: 600; font-size: 15px">ตำบล / แขวง</label>
+              <input id="subdistrict" type="text" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="district" style="font-weight: 600; font-size: 15px">อำเภอ / เขต</label>
+              <input id="district" type="text" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="province" style="font-weight: 600; font-size: 15px">จังหวัด</label>
+              <select id="province" style="height: 48px; box-sizing: border-box; padding: 0 12px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+                <option value="">เลือกจังหวัด</option>
+                <option value="1">[จังหวัด]</option>
+              </select>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px">
+              <label for="zip" style="font-weight: 600; font-size: 15px">รหัสไปรษณีย์</label>
+              <input id="zip" type="text" placeholder="XXXXX" style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF">
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label for="note" style="font-weight: 600; font-size: 15px">จุดสังเกตหรือหมายเหตุถึงผู้ส่ง <span style="font-weight: 400; color: #4F5B4C">(ไม่บังคับ)</span></label>
+            <textarea id="note" rows="2" placeholder="เช่น ส่งที่ไร่ข้างวัด หรือให้โทรก่อนส่ง" style="box-sizing: border-box; padding: 12px 14px; border: 1px solid #A9BDA3; border-radius: 12px; font-size: 16px; color: #1A2419; background: #FFFFFF; resize: vertical"></textarea>
+          </div>
+        </section>
+
+        <section style="background: #FFFFFF; border: 1px solid #D5DDD2; border-radius: 20px; padding: 24px">
+          <fieldset style="margin: 0; padding: 0; border: 0; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+            <legend style="padding: 0; margin-bottom: 16px; font-weight: 700; font-size: 21px; color: #143D22">
+              <span style="display: inline-flex; width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; background: #1E5631; color: #FFFFFF; font-size: 15px; align-items: center; justify-content: center; vertical-align: middle">3</span><span style="vertical-align: middle">วิธีจัดส่ง</span>
+            </legend>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 15px 16px; border: 2px solid #1E5631; border-radius: 14px; background: #F3F8F1; cursor: pointer">
+              <input type="radio" name="ship" value="standard" checked="checked" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+              <span style="flex: none; width: 40px; height: 40px; border-radius: 10px; background: #FFFFFF; color: #1E5631; display: flex; align-items: center; justify-content: center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle></svg>
+              </span>
+              <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.4"><strong>จัดส่งมาตรฐาน</strong><span style="font-size: 14px; color: #4F5B4C">ได้รับภายใน [จำนวนวัน] วันทำการ</span></span>
+              <span style="font-weight: 700">฿[ค่าส่ง]</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 16px 17px; border: 1px solid #D5DDD2; border-radius: 14px; background: #FFFFFF; cursor: pointer">
+              <input type="radio" name="ship" value="farm" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+              <span style="flex: none; width: 40px; height: 40px; border-radius: 10px; background: #EEF3EC; color: #1E5631; display: flex; align-items: center; justify-content: center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </span>
+              <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.4"><strong>รถส่งถึงไร่ / แปลงเกษตร</strong><span style="font-size: 14px; color: #4F5B4C">สำหรับคำสั่งซื้อ [จำนวน] กระสอบขึ้นไป</span></span>
+              <span style="font-weight: 700">฿[ค่าส่ง]</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 16px 17px; border: 1px solid #D5DDD2; border-radius: 14px; background: #FFFFFF; cursor: pointer">
+              <input type="radio" name="ship" value="pickup" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+              <span style="flex: none; width: 40px; height: 40px; border-radius: 10px; background: #EEF3EC; color: #1E5631; display: flex; align-items: center; justify-content: center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path><path d="M2 7h20"></path><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path></svg>
+              </span>
+              <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.4"><strong>รับเองที่ร้าน</strong><span style="font-size: 14px; color: #4F5B4C">[ที่อยู่ร้าน]</span></span>
+              <span style="font-weight: 700; color: #1E5631">ฟรี</span>
+            </label>
+          </fieldset>
+        </section>
+
+        <section style="background: #FFFFFF; border: 1px solid #D5DDD2; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+          <fieldset style="margin: 0; padding: 0; border: 0; min-width: 0">
+            <legend style="padding: 0; margin-bottom: 16px; font-weight: 700; font-size: 21px; color: #143D22">
+              <span style="display: inline-flex; width: 30px; height: 30px; margin-right: 10px; border-radius: 50%; background: #1E5631; color: #FFFFFF; font-size: 15px; align-items: center; justify-content: center; vertical-align: middle">4</span><span style="vertical-align: middle">วิธีชำระเงิน</span>
+            </legend>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+              <label style="display: flex; align-items: center; gap: 12px; padding: 15px 16px; border: 2px solid #1E5631; border-radius: 14px; background: #F3F8F1; cursor: pointer">
+                <input type="radio" name="pay" value="promptpay" checked="checked" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M21 21v.01"></path><path d="M12 7v3a2 2 0 0 1-2 2H7"></path><path d="M3 12h.01"></path><path d="M12 3h.01"></path><path d="M12 16v.01"></path><path d="M16 12h1"></path><path d="M21 12v.01"></path><path d="M12 21v-1"></path></svg>
+                <span style="display: flex; flex-direction: column; line-height: 1.4"><strong>พร้อมเพย์ QR</strong><span style="font-size: 14px; color: #4F5B4C">สแกนจ่ายผ่านแอปธนาคาร</span></span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 12px; padding: 16px 17px; border: 1px solid #D5DDD2; border-radius: 14px; background: #FFFFFF; cursor: pointer">
+                <input type="radio" name="pay" value="transfer" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"></line><line x1="6" x2="6" y1="18" y2="11"></line><line x1="10" x2="10" y1="18" y2="11"></line><line x1="14" x2="14" y1="18" y2="11"></line><line x1="18" x2="18" y1="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
+                <span style="display: flex; flex-direction: column; line-height: 1.4"><strong>โอนผ่านบัญชีธนาคาร</strong><span style="font-size: 14px; color: #4F5B4C">แนบสลิปหลังโอนเงิน</span></span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 12px; padding: 16px 17px; border: 1px solid #D5DDD2; border-radius: 14px; background: #FFFFFF; cursor: pointer">
+                <input type="radio" name="pay" value="card" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+                <span style="display: flex; flex-direction: column; line-height: 1.4"><strong>บัตรเครดิต / เดบิต</strong><span style="font-size: 14px; color: #4F5B4C">ชำระออนไลน์ด้วยบัตร</span></span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 12px; padding: 16px 17px; border: 1px solid #D5DDD2; border-radius: 14px; background: #FFFFFF; cursor: pointer">
+                <input type="radio" name="pay" value="cod" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+                <span style="display: flex; flex-direction: column; line-height: 1.4"><strong>เก็บเงินปลายทาง</strong><span style="font-size: 14px; color: #4F5B4C">จ่ายเงินสดเมื่อได้รับสินค้า</span></span>
+              </label>
+            </div>
+          </fieldset>
+          <div style="display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; border-radius: 12px; background: #EEF3EC; font-size: 15px">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+            <span>ระบบจะแสดง QR Code พร้อมเพย์ให้สแกนหลังกดยืนยันคำสั่งซื้อ</span>
+          </div>
+          <label style="display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer">
+            <input type="checkbox" name="taxinvoice" style="flex: none; width: 20px; height: 20px; margin: 0; accent-color: #1E5631">
+            <span>ต้องการใบกำกับภาษี</span>
+          </label>
+        </section>
+      </div>
+
+      <aside aria-label="สรุปคำสั่งซื้อ" style="flex: 1 1 340px; min-width: 0; background: #FFFFFF; border: 1px solid #D5DDD2; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 18px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <h2 style="margin: 0; font-weight: 700; font-size: 22px; color: #143D22">สรุปคำสั่งซื้อ</h2>
+          <a href="cart.html" style="font-weight: 700; font-size: 15px">แก้ไข</a>
+        </div>
+
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
+          <li style="display: flex; align-items: center; gap: 12px">
+            <span aria-hidden="true" style="flex: none; width: 56px; height: 56px; border-radius: 10px; background: #EEF3EC; display: flex; align-items: center; justify-content: center">
+              <span style="width: 30px; height: 40px; border-radius: 5px 5px 4px 4px; background: #1E5631"></span>
+            </span>
+            <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.4"><strong style="font-size: 15px">ปุ๋ยเคมี สูตร 16-16-16</strong><span style="font-size: 14px; color: #4F5B4C">50 กก. × 2</span></span>
+            <span style="font-weight: 600">฿[ราคารวม]</span>
+          </li>
+          <li style="display: flex; align-items: center; gap: 12px">
+            <span aria-hidden="true" style="flex: none; width: 56px; height: 56px; border-radius: 10px; background: #EEF3EC; display: flex; align-items: center; justify-content: center">
+              <span style="width: 30px; height: 40px; border-radius: 5px 5px 4px 4px; background: #1E5631"></span>
+            </span>
+            <span style="flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.4"><strong style="font-size: 15px">ปุ๋ยยูเรีย สูตร 46-0-0</strong><span style="font-size: 14px; color: #4F5B4C">50 กก. × 1</span></span>
+            <span style="font-weight: 600">฿[ราคารวม]</span>
+          </li>
+        </ul>
+
+        <dl style="margin: 0; padding-top: 16px; border-top: 1px solid #D5DDD2; display: flex; flex-direction: column; gap: 10px">
+          <div style="display: flex; justify-content: space-between; gap: 12px">
+            <dt style="color: #4F5B4C">ยอดรวมสินค้า (3 ชิ้น)</dt>
+            <dd style="margin: 0; font-weight: 600">฿[ยอดรวมสินค้า]</dd>
+          </div>
+          <div style="display: flex; justify-content: space-between; gap: 12px">
+            <dt style="color: #4F5B4C">ส่วนลด</dt>
+            <dd style="margin: 0; font-weight: 600">−฿[ส่วนลด]</dd>
+          </div>
+          <div style="display: flex; justify-content: space-between; gap: 12px">
+            <dt style="color: #4F5B4C">ค่าจัดส่ง (มาตรฐาน)</dt>
+            <dd style="margin: 0; font-weight: 600">฿[ค่าส่ง]</dd>
+          </div>
+        </dl>
+
+        <div style="border-top: 1px solid #D5DDD2; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px">
+          <span style="font-weight: 700; font-size: 17px">ยอดชำระทั้งหมด</span>
+          <span style="font-weight: 700; font-size: 28px; line-height: 1.2; color: #143D22">฿[ยอดรวม]</span>
+        </div>
+
+        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; cursor: pointer">
+          <input type="checkbox" name="agree" style="flex: none; width: 20px; height: 20px; margin: 2px 0 0; accent-color: #1E5631">
+          <span>ฉันยอมรับ <a href="#">เงื่อนไขการสั่งซื้อ</a> และ <a href="#">นโยบายความเป็นส่วนตัว</a></span>
+        </label>
+
+        <button type="submit" style="min-height: 56px; border-radius: 999px; border: 0; background: #F5B700; color: #1A2419; font-weight: 700; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>ยืนยันคำสั่งซื้อ</span>
+        </button>
+
+        <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #4F5B4C">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E5631" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          <span>สินค้ามีทะเบียนถูกต้อง ตรวจสอบได้</span>
+        </span>
+
+        <a href="cart.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; text-decoration: none">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+          <span>กลับไปแก้ไขตะกร้า</span>
+        </a>
+      </aside>
+    </form>
+  </main>
+
+  <footer style="background: #143D22; color: #C9D6C5">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 24px; font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px">
+      <span>© 2026 Khaipui สงวนลิขสิทธิ์</span>
+      <span style="display: flex; gap: 16px"><a href="#" style="color: #E3EBDF">นโยบายความเป็นส่วนตัว</a><a href="#" style="color: #E3EBDF">เงื่อนไขการใช้งาน</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
